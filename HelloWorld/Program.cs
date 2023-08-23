@@ -5,13 +5,13 @@
     {
         static void Main(string[] args)
         {
-            WriteLine("What is your name?");
+            WriteLine("Who is being seen today?");
 
             Write("> ");
 
-            string userName = ReadLine();
-
-            WriteLine("Your name is " + userName);
+            string patientName = ReadLine();
+            
+            WriteLine("Welcome: " + patientName);
         }
     }
 }
