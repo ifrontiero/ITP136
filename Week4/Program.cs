@@ -19,11 +19,11 @@ namespace Week4
             food2.Description = "Melon";
             food2.Price = 1.5;
 
-            WriteLine("{0,10} {1,10} {2,10}", "FoodId", "Name", "Description", "Price");
+            WriteLine("{0,10} {1,10} {2,10} {3,10}", "FoodId", "Name", "Description", "Price");
 
-            WriteLine("{0,10} {1,10} {2,10}", food1.FoodId, food1.Name, food1.Description, food1.Price);
+            WriteLine("{0,10} {1,10} {2,10} {3,10}", food1.FoodId, food1.Name, food1.Description, food1.Price);
 
-            WriteLine("{0,10} {1,10} {2,10}", food2.FoodId, food2.Name, food2.Description, food2.Price);
+            WriteLine("{0,10} {1,10} {2,10} {3,10}", food2.FoodId, food2.Name, food2.Description, food2.Price);
         }
     }
 }
