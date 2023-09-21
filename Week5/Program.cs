@@ -4,40 +4,45 @@ namespace Module5
 {
     public class Program
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
-            int a, b;
+            WelcomeStatement();
 
-            WelcomeMessage();
+            int secretNumber = 42;
+            MagicNumber(secretNumber);
 
-            for (int k = 0; k < 3; k++)
-            {
-                a = AskNumber();
-                b = AskNumber();
+            Write("Enter first number: ");
+            int a = Convert.ToInt32(ReadLine());
 
-                AddNumber(a, b);
-            }
+            Write("Enter second number: ");
+            int b = Convert.ToInt32(ReadLine());
+
+            FindArea(a, b);
+
+            WriteLine($"Tax rate: {LocalTaxRate()}");
         }
 
-        static void WelcomeMessage()
+        static void WelcomeStatement()
         {
-            WriteLine("Welcome to my method");
+            WriteLine("Welcome to My Method Examples");
         }
 
-        static int AskNumber()
+        static void MagicNumber(int num)
         {
-            Write("Enter a number ");
-
-            int x = Convert.ToInt32(ReadLine());
-
-            return x;
+            WriteLine(num);
         }
 
-        static void AddNumber(int num1, int num2)
+        static void FindArea(int x, int y)
         {
-            int total = num1 + num2;
+            WriteLine($"Area: {x * y}");
+        }
 
-            WriteLine($"Your total is {total}");
+        static double LocalTaxRate()
+        {
+            Write("Enter tax rate: ");
+            double rate = Convert.ToDouble(ReadLine());
+
+            return rate;
         }
     }
 }
